@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-mail Filter Test Web App">
+    <meta name="name" content="Jose Hernandez">
+    <title>Solphish</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+  </head>
+
+
+  <body>
+    
+    <h1 class="text-center">Solphish</h1>
+    
+    <form class="form-horizontal" role="form" method="get" action="solphish.php">  
+      
+      <div class="form-group">
+	<label for="senderEmail" class="col-lg-2 control-label">Sender</label>
+	<div class="col-lg-3">
+	  <input type="email" class="form-control" id="senderEmail1" placeholder="E-mail" name="sender">
+	</div>
+      </div>
+      
+      <div class="form-group">
+	<label for="recipientEmail" class="col-lg-2 control-label">Recipient</label>
+	<div class="col-lg-3">
+	  <input width="" type="email" class="form-control" id="recipient" placeholder="E-mail" name="recipient">
+	</div>
+      </div>
+
+      <div class="form-group">
+	<div class="col-lg-offset-2 col-lg-10">
+	  
+	  <div class="checkbox">
+            <label>
+              <input type="checkbox" name="spam_test" value="st"> Spam Test (GTube)
+            </label>
+          </div>
+
+	  <div class="checkbox">
+            <label>
+              <input type="checkbox" name="virus_eicar" value="v"> Virus (EICAR)
+            </label>
+	  </div>
+	  
+	  <div class="checkbox">
+            <label>
+              <input type="checkbox" name="virus_zipped_eicar" value="vze"> Virus (Zipped EICAR)
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="virus_double_eicar" value="2vdze"> Virus (Double Zipped EICAR)
+            </label>
+	  </div>
+
+	  <div class="checkbox">
+            <label>
+              <input type="checkbox" name="virus_double_file" value="2vdfe"> Virus Double File Extension
+            </label>
+	  </div>
+
+	  <div class="checkbox">
+            <label>
+              <input type="checkbox" name="virus_encoded_zip" value="vezfe"> Virus Encoded ZIP File Extension
+            </label>
+	  </div>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="clsid_file_ext" value="clsid"> CLSID File Extension
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="double_file_ext" value="dfe"> Double File Extension
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="malformed_file_ext" value="mfe"> Malformed File Extension
+            </label>
+          </div>
+
+	  <div class="checkbox">
+            <label>
+              <input type="checkbox" name="vbs_attach" value="vbs"> VBS Attachment 
+            </label>
+	  </div>
+	  
+	  <div class="checkbox">
+            <label>
+              <input type="checkbox" name="vba_attach" value="vba"> VBA Attachment
+            </label>
+	  </div>
+
+	  <div class="checkbox">
+            <label>
+              <input type="checkbox" name="scr_attach" value="scr"> SCR Attachment
+            </label>
+	  </div>
+	  
+	  <div class="checkbox">
+            <label>
+              <input type="checkbox" name="pif_attach" value="pif"> PIF Attachment
+            </label>
+	  </div>
+	  
+	  <div class="checkbox">
+            <label>
+              <input type="checkbox" name="shs_attach" value="shs"> SHS Attachment
+            </label>
+	  </div>
+	  
+	  <div class="checkbox">
+            <label>
+              <input type="checkbox" name="dll_attach" value="dll"> DLL Attachment
+            </label>
+          </div>
+
+	    <div class="checkbox">
+            <label>
+              <input type="checkbox" name="chm_attach" value="chm"> CHM Attachment
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="bat_attach" value="bat"> BAT Attachment
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="exe_attach" value="exe"> EXE Attachment
+            </label>
+          </div>
+	
+	</div>
+      </div>
+      
+
+      <div class="form-group">
+	<div class="col-lg-offset-2 col-lg-10">
+	  <button type="submit" class="btn btn-default" value="Submit">Send</button>
+	</div>
+      </div>
+    </form>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
