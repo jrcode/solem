@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Solem Form</title>
+    
+  </head>
+  <body>
+    <h1> Solem Form </h1>
+    <form method="get" action="solem.php" name="solem_form">
+      <table>
+	<tr>
+	  <td><label for="sender">Sender</label></td>
+	  <td><input type="email" placeholder="E-mail" name="sender"></td>
+	  <td><label for="sender_name">Associated</label></td>
+	  <td><input type="text" placeholder="Name" name="sender_name"></td>
+	</tr>
+	<tr>
+	  <td><label for="recipient">Recipient</label></td>
+	  <td><input type="email" placeholder="E-mail" name="recipient"></td>
+	  <td><label for="recipient_name">Associated</label></td>
+	  <td><input type="text" placeholder="Name" name="recipient_name"></td>
+	</tr>
+	<tr>
+	  <td>
+	    <input type="checkbox" name="attach['spam_test']" value="st">
+	    <label for="spam_test">Spam Test</label>
+	  </td>
+	  <td>
+	    <input type="checkbox" name="attach['virus_eicar']" value="ve"> 
+	    <label for="virus_eicar">Virus (EICAR)</label>
+	  </td>
+	  <td>
+	    <input type="checkbox" name="attach['virus_zip_eicar']" value="vze">
+	    <label for="virus_zip_eicar">Virus (ZIP EICAR)</label>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <input type="checkbox" name="attach['virus_double_zip_eicar']" value="vdze">
+	    <label for="virus_double_zip_eicar">Virus (Double ZIP EICAR)</label>
+	  </td>  
+	  <td>
+	    <input type="checkbox" name="attach['virus_double_file']" value="vdf">
+	    <label for="virus_double_file">Virus (Double File Extension</label>
+	  </td>
+	  <td>
+	    <input type="checkbox" name="attach['virus_encoded_zip']" value="vez">
+	    <label for="virus_encoded_zip">Virus Encoded ZIP File Extension<label>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <input type="checkbox" name="attach['clsid_file']" value="clsid">
+	    <label for="clsid_file">CLSID File Extension</label>
+	  </td>
+	  <td>
+	    <input type="checkbox" name="attach['double_file_ext']" value="dfe">
+	    <label for="double_file_ext">Double File Extension</label>
+	  </td>
+	  <td>
+	    <input type="checkbox" name="attach['malformed_file_ext']" value="mfe">
+	    <label for="malformed_file_ext">Malformed File Extension</label>
+	  <td>
+	</tr>
+	<tr>
+	  <td>
+	    <input type="checkbox" name="attach['vbs_attach']" value="vbs">
+	    <label for="vbs_attach">VBS Attachment</label>
+	  </td>
+	  <td>
+	    <input type="checkbox" name="attach['vba_attach']" value="vba">
+	    <label for="vba_attach">VBA Attachment</label>
+	  </td>
+	  <td>
+	    <input type="checkbox" name="attach['scr_attach']" value="scr">
+	    <label for="scr_attach">SCR Attachment</label>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <input type="checkbox" name="attach['pif_attach']" value="pif">
+	    <label for="pif_attach">PIF Attachment</label>
+	  </td>
+	  <td>
+	    <input type="checkbox" name="attach['shs_attach']" value="shs">
+	    <label for="shs_attach">SHS Attachment</label>
+	  </td>
+	  <td>
+	    <input type="checkbox" name="attach['dll_attach']" value="dll">
+	    <label for="dll_attach">DLL Attachment</label>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <input type="checkbox" name="attach['chm_attach']" value="chm">
+	    <label for="chm_attach">CHM Attachment</label>
+	  </td>
+	  <td>
+	    <input type="checkbox" name="attach['bat_attach']" value="bat">
+	    <label for="bat_attach">BAT Attachment</label>
+	  </td>
+	  <td>
+	    <input type="checkbox" name="attach['exe_attach']" value="exe">
+	    <label for="exe_attach">EXE Attachment</label>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <input type="submit" value="Submit">
+	  </td>
+	</tr>
+      </table>
+    </form>
+  </body>
+</html>
